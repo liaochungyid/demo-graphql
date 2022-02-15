@@ -1,0 +1,39 @@
+{
+  "name": "demo-graphql",
+  "version": "1.0.0",
+  "description": "Demo graphql with sequelize(mysql)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db:migrate": "npx sequelize db:migrate",
+    "db:migrate-reset": "sequelize db:migrate:undo:all && npx sequelize db:migrate",
+    "db:seed": "npx sequelize db:seed:all",
+    "db:seed-reset": "npx sequelize db:seed:undo:all && npx sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaochungyid/demo-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "mysql"
+  ],
+  "author": "LCY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liaochungyid/demo-graphql/issues"
+  },
+  "homepage": "https://github.com/liaochungyid/demo-graphql#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.6"
+  }
+}
